@@ -10,5 +10,6 @@ public interface MappingEspecialidade {
 
     Especialidade toEspecialidadeEntity(EspecialidadeRequest especialidade);
 
-    EspecialidadeResponse toRespponseEspecialidade (Especialidade especialidade);
+    EspecialidadeResponse toEspecialidadeResponse(Especialidade especialidade);
 }
+

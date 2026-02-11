@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-02-04T14:29:25-0300",
+    date = "2026-02-10T14:23:41-0300",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.6 (Oracle Corporation)"
 )
 @Component
@@ -28,7 +28,7 @@ public class MappingEspecialidadeImpl implements MappingEspecialidade {
     }
 
     @Override
-    public EspecialidadeResponse toRespponseEspecialidade(Especialidade especialidade) {
+    public EspecialidadeResponse toEspecialidadeResponse(Especialidade especialidade) {
         if ( especialidade == null ) {
             return null;
         }

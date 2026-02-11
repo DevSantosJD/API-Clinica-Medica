@@ -44,7 +44,6 @@ public class MedicoService {
     public MedicoResponse getMedicos(UUID id_medico){
         Medico medico = medicoRepository.findById(id_medico)
                 .orElseThrow(()-> new RuntimeException("Medico não localizao"));
-        MedicoResponse medicoResponseDTO = mappingMedico.toMedicoResponse(medico);
 
         return mappingMedico.toMedicoResponse(medico);
 

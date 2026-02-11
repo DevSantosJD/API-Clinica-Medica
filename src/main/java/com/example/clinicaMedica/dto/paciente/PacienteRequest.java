@@ -1,4 +1,9 @@
 package com.example.clinicaMedica.dto.paciente;
 
-public class PacienteRequest {
+public record PacienteRequest(
+
+        String nome,
+        int idade,
+        String cpf
+) {
 }

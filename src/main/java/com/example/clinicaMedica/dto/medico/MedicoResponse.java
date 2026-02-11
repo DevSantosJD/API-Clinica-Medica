@@ -10,5 +10,5 @@ public record MedicoResponse(
         UUID id,
         String nome,
         String crm,
-        EspecialidadeResponse nomeEspecialidade
+        EspecialidadeResponse especialidade
 ) {}
