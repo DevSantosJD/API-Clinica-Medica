@@ -1,4 +1,8 @@
 package com.example.clinicaMedica.exception;
 
-public class BuisnessException {
+public abstract class BuisnessException extends RuntimeException{
+
+    protected BuisnessException(String msg){
+        super(msg);
+    }
 }

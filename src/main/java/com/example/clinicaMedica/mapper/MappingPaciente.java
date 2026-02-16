@@ -10,5 +10,5 @@ public interface MappingPaciente {
 
     Paciente toPacienteEntity (PacienteRequest paciente);
 
-    PacienteResponse toPAcienteResponse (Paciente paciente);
+    PacienteResponse toPacienteResponse(Paciente paciente);
 }

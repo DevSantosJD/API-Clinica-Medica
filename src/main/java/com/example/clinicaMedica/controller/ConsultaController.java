@@ -2,10 +2,12 @@ package com.example.clinicaMedica.controller;
 
 import com.example.clinicaMedica.dto.consulta.ConsultaRequest;
 import com.example.clinicaMedica.dto.consulta.ConsultaResponse;
+import com.example.clinicaMedica.model.entity.Consulta;
 import com.example.clinicaMedica.service.ConsultaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController

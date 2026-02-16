@@ -30,7 +30,10 @@ public class Paciente {
     @Column(nullable = false, length = 11, unique = true)
     private String cpf;
 
+    /*
     @OneToMany(mappedBy = "paciente")
     private List<Consulta> consultas;
+
+     */
 
 }

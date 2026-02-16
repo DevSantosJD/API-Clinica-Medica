@@ -1,4 +1,8 @@
 package com.example.clinicaMedica.exception;
 
-public class UsuarioNaoEncontradoException {
+public class PacienteNaoEncontradoException extends BuisnessException {
+
+    public PacienteNaoEncontradoException(String msg){
+        super(msg);
+    }
 }

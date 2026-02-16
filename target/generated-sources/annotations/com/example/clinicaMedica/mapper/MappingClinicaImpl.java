@@ -6,12 +6,13 @@ import com.example.clinicaMedica.model.entity.Clinica;
 import com.example.clinicaMedica.model.entity.Consulta;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-02-09T15:12:41-0300",
+    date = "2026-02-16T13:58:52-0300",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.6 (Oracle Corporation)"
 )
 @Component
@@ -37,9 +38,11 @@ public class MappingClinicaImpl implements MappingClinica {
             return null;
         }
 
+        UUID id = null;
         String nome = null;
         List<Consulta> consultas = null;
 
+        id = consulta.getId();
         nome = consulta.getNome();
         List<Consulta> list = consulta.getConsultas();
         if ( list != null ) {
@@ -48,7 +51,7 @@ public class MappingClinicaImpl implements MappingClinica {
 
         String crm = null;
 
-        ClinicaResponse clinicaResponse = new ClinicaResponse( nome, crm, consultas );
+        ClinicaResponse clinicaResponse = new ClinicaResponse( id, nome, crm, consultas );
 
         return clinicaResponse;
     }

@@ -1,4 +1,10 @@
 package com.example.clinicaMedica.exception;
 
-public class MedicoNaoEncontradoException {
+import com.example.clinicaMedica.dto.medico.MedicoRequest;
+
+public class MedicoNaoEncontradoException extends BuisnessException {
+
+    public MedicoNaoEncontradoException(String msg){
+        super(msg);
+    }
 }

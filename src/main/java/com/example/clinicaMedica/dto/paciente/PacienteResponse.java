@@ -10,7 +10,7 @@ public record PacienteResponse(
         UUID id,
         String nome,
         int idade,
-        String cpf,
-        List<ConsultaResponse> consultas
+        String cpf
+       // List<ConsultaResponse> consultas
 ) {
 }
